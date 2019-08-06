@@ -1,0 +1,671 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .container
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+
+  .main__slider
+    .slide
+      .container
+        width: 100%
+        padding: 0 15px
+        .description
+          .title
+            font-size: 30px
+
+  .brands__slider
+    padding: 45px 100px
+
+  .stages
+    .container
+      .wrapper
+        .item
+          width: 48%
+
+  .preview_item
+    width: 340px
+
+  .footer .container
+    padding: 40px 15px
+
+  .product-text .button-group a
+    font-size: 14px
+    height: 50px
+
+  .popular
+    .wrapper
+      margin: 0 auto
+      width: 70%
+      justify-content: space-around
+
+
+
+@media screen and (max-width: 1140px)
+  .popular
+    .wrapper
+      width: 75%
+      justify-content: space-around
+
+  .footer
+    .container
+      padding: 20px 15px
+      .phone-item
+        flex-direction: column
+        align-items: flex-start
+        margin: 0 20px 0 auto
+        a
+          margin: 0 0 5px 0
+
+@media screen and (max-width: 1100px)
+  .preview_item
+    width: 330px
+
+@media screen and (max-width: 1070px)
+  .menu .btn-catalog-menu
+    position: inherit
+
+  .catalog-menu
+    width: 100%
+    left: 0
+
+  .form-search-wrapper
+    top: 77px
+
+  .advantages .container .item a
+    font-size: 16px
+
+  .banner .container .item h3
+    top: auto
+    bottom: 50px
+    font-size: 20px
+
+  .content-seo
+    .container
+      .wrapper
+        width: 75%
+        margin: 0 auto
+        justify-content: space-between
+        .preview_item
+          margin: 0 0 29px
+
+  .preview_item
+    width: 340px
+
+  .product-image
+    width: 400px
+
+  .product-image__min
+    .item
+      flex: 1
+      width: auto
+      height: 100px
+
+  .product-text
+    width: calc(100% - 450px)
+
+  .description-wrapper .product-item h2
+    font-size: 24px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .logo-item
+    flex-direction: column
+    align-items: flex-start
+    p
+      margin: 0
+      max-width: none
+      width: 100%
+      text-align: center
+
+  .phone-item a
+    font-size: 16px
+
+  .search-item__open, .compare-item
+    height: 72px
+    font-size: 13px
+
+  .menu .menu__group > li
+    font-size: 12px
+
+  .advantages__min
+    width: 40%
+
+  .advantages__max
+    width: 60%
+
+  .content-seo
+    .container
+      .wrapper
+        width: 90%
+
+@media only screen and (max-width : 920px)
+  .header__menu
+    display: none
+
+  .main__slider
+    margin-top: 0
+
+  .search-item
+    width: 15%
+
+  .form-search-wrapper
+    top: 77px
+
+  .search-item__open, .compare-item
+    height: 60px
+    p
+      display: none
+    span
+      margin: 0
+
+  .logo-item a
+    width: 190px
+
+  header
+    .phone-item
+      display: none
+      position: absolute
+      background: #FFFFFF
+      padding: 10px
+      top: 65px
+      left: 57%
+      z-index: 2
+
+  .btn-mobile
+    display: block
+    svg
+      stroke: $accent
+      circle, path
+        stroke: $accent
+
+  .cart-mobile
+    position: relative
+    .total
+      position: absolute
+      top: -5px
+      right: -7px
+      background: #c40000
+      width: 17px
+      height: 17px
+      border-radius: 50%
+      color: #FFFFFF
+      display: flex
+      align-items: center
+      justify-content: center
+      font:
+        weight: bold
+        size: 9px
+      line-height: 9px
+
+  .btn-accent
+    font-size: 12px
+    padding: 10px 15px
+
+  .btn-mobile-menu
+    height: 100%
+    width: 10%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #e9eaec
+    .fa
+      color: $accent
+
+  .form-search-wrapper
+    top: 65px
+
+  .brands__slider .slick-arrow
+    width: 50px
+
+  .brands__slider
+    padding: 20px 70px
+
+  .footer .container .list-group
+    flex-direction: column
+    align-items: flex-start
+    li
+      margin: 5px 0 0 0
+
+  .page-title
+    margin-top: 0
+
+  h1
+    margin: 30px 0
+
+  .btn-filter-mobile
+    display: flex
+    flex-direction: row
+    align-items: center
+    .icon
+      margin-right: 5px
+
+  .sidebar
+    display: none
+
+  .page-content
+    width: 100%
+
+  .list-firm
+    li
+      a
+        font-size: 14px
+
+  .product-text .line-price
+    font-size: 28px
+    .price .old-price
+      font-size: 20px
+
+  .list-equipment
+    margin: 30px 0
+
+  .article
+    font-size: 14px
+    padding: 10px 17px
+
+  .checkbox .label
+    font-size: 14px
+
+  .product-image__max
+    height: 300px
+    .loop
+      width: 50px
+      height: 50px
+      svg
+        width: 25px
+        height: 25px
+
+  .btn-compare
+    font-size: 12px
+
+  .description-wrapper
+    .product-item
+      h2
+        .icon
+          width: 40px
+      .text
+        padding: 0 20px 0 40px
+
+
+@media screen and (max-width: 850px)
+  .product-wrapper
+    flex-direction: column
+    align-items: center
+
+  .product-image, .product-text
+    width: 100%
+
+  .product-text
+    margin: 20px 0 0 0
+
+  .advantages .container
+    .item
+      padding: 10px 0
+      flex-direction: column
+      align-items: center
+      min-width: 50%
+      a
+        max-width: none
+        margin: 10px 0 0 0
+        text-align: center
+  .popular
+    .wrapper
+      width: 100%
+
+  .banner .container
+    flex-direction: column
+    align-items: center
+    .item
+      width: 100%
+      overflow: hidden
+      img
+        width: 100%
+
+  .work-banner
+    flex-direction: column
+    align-items: center
+    .item
+      width: 100%
+      height: auto
+      overflow: hidden
+      h3
+        font-size: 16px
+        line-height: 20px
+        left: 20px
+      img
+        width: 100%
+        height: 100%
+        max-width: none
+
+  .stages
+    .container
+      .wrapper
+        flex-direction: column
+        align-items: center
+        .item
+          width: 100%
+
+  .description-wrapper
+    flex-direction: column
+    align-items: center
+    padding: 30px
+    .product-item
+      width: 100%
+      margin-bottom: 20px
+      h2
+        font-size: 20px
+        .icon
+          width: 20px
+          height: 30px
+      .text
+        font-size: 14px
+        line-height: 20px
+        padding: 0 10px
+        .list
+          li
+            font-size: 14px
+            &:before
+              top: 2px
+
+@media screen and (max-width: 800px)
+  .advantages-section
+    .container
+      .wrapper
+        flex-direction: column
+        align-items: center
+
+  .advantages__min, .advantages__max
+    width: 100%
+
+  .advantages__min
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .icon
+      margin: 0 auto 10px
+      width: auto
+      height: auto
+    h3
+      position: relative
+      left: 0
+      top: 0
+    &:nth-child(2)
+      order: 1
+
+  .advantages__item h3
+    width: 100%
+    max-width: none
+    padding: 0 20px
+    text-align: center
+    left: 0
+    right: 0
+
+  .content-seo
+    .container
+      .wrapper
+        width: 100%
+        justify-content: space-around
+
+  .preview_item
+    width: 300px
+    height: 270px
+    h3
+      font-size: 20px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .search-item__open
+    span
+      min-width: 20px
+
+@media screen and (max-width: 720px)
+  .footer
+    .container
+      .list-group
+        order: 2
+        margin: 10px 0 0 0
+        width: 40%
+        justify-content: flex-end
+        align-items: flex-end
+      .phone-item
+        width: 50%
+        order: 1
+        margin: 10px 0 0 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 660px)
+  header
+    .header__top
+      .container
+        flex-direction: column
+        align-items: center
+        .header__top-left, .header__top-right
+          width: 100%
+    .phone-item
+      left: 23%
+      top: 100px
+
+  .form-search-wrapper
+    top: 55px
+
+  .search-item, .btn-mobile-menu
+    width: 50px
+
+  .search-item__open, .compare-item, .btn-mobile-menu
+    height: 45px
+
+  .logo-item
+    align-items: center
+    justify-content: center
+    a
+      height: 28px
+      width: auto
+      img
+        height: 100%
+        width: auto
+
+  .main__slider .slide .container .description
+    width: 100%
+
+  .card
+    width: 220px
+    .card__image
+      height: 170px
+    .card__title
+      font-size: 16px
+    .card__footer
+      .price
+        .new-price
+          font-size: 16px
+        .old-price
+          font-size: 14px
+
+  .banner .container .item
+    height: auto
+    h3
+      bottom: 20px
+      left: 20px
+
+  .brands__slider .logo-brand
+    max-width: 100px
+
+  .content-seo .container .wrapper
+    flex-direction: column
+    align-items: center
+
+  .preview_item
+    width: 100%
+    height: 220px
+    img
+      width: 100%
+      height: auto
+      min-height: 100%
+
+@media screen and (max-width: 530px)
+  .btn-default
+    padding: 10px 20px
+
+  .main__slider
+    .slide
+      height: 250px
+      img
+        height: 100%
+        width: auto
+        max-width: none
+      .container
+        .description
+          .title
+            font-size: 24px
+            line-height: 30px
+          p
+            padding: 10px 0
+            line-height: 18px
+            font-size: 14px
+
+  .links
+    font-size: 14px
+
+  .section-title
+    margin: 40px 0 20px
+
+  h2
+    font-size: 24px
+
+  .brands__slider .slick-arrow
+    width: 30px
+
+  .brands__slider
+    padding: 10px 40px
+
+  .advantages__min
+    height: 200px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px)
+  header
+    .callbak-item
+      display: none
+
+  .cart-mobile
+    padding: 10px
+    .total
+      right: 0
+      top: 4px
+
+  header .phone-item
+    left: 0
+    right: 0
+    text-align: center
+
+  .btn-default
+    padding: 10px
+
+  .footer .container
+    flex-direction: column
+    align-items: center
+    .list-group
+      justify-content: center
+      align-items: center
+      width: 100%
+    .callbak-item
+      order: 3
+      margin: 10px 0 0 0
+    .phone-item
+      width: 100%
+      justify-content: center
+      align-items: center
+
+  h1
+    margin: 15px 0
+    font-size: 22px
+
+  .list-firm
+    column-count: 2
+
+  .page-content
+    .wrapper
+      flex-direction: column
+      align-items: center
+
+  .sort-wrapper
+    .sort-line
+      margin: 20px 0
+
+  .content-wrapper .container
+      h2
+        margin: 15px 0
+
+
+  .btn-filter-mobile
+    width: 100%
+    justify-content: center
+    align-items: center
+    text-align: center
+    margin-bottom: 10px
+
+  .product-text
+    .line-price
+      .price
+        margin-left: 10px
+    .line
+      flex-direction: column
+      align-items: center
+    .button-group
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      a
+        width: 90%
+        justify-content: center
+        align-items: center
+      .btn-one-click
+        margin: 10px 0 0 0
+
+  .btn-compare
+    margin: 10px 0 0 0
+
+
+  .list-equipment li
+    flex-wrap: nowrap
+    .total
+      font-size: 14px
+      min-width: 70px
+
+  .description-wrapper .product-item .text .list
+    width: 100%
+
+  .card
+    width: 90%
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

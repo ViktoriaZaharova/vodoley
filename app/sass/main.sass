@@ -1,0 +1,1701 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #FFFFFF
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+
+a
+  display: block
+  text-decoration: none
+  outline: none
+  transition: .3s ease
+  color: $accent
+
+h1
+  color: #FFFFFF
+  font:
+    size: 26px
+    weight: 700
+  margin: 70px 0 20px
+
+h2
+  font:
+    family: 'SegoeUI-SemiBold', sans-serif
+    size: 28px
+  color: #000
+
+//button
+button
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+    radius: 0
+  outline: none
+  box-shadow: none
+
+.btn-submit
+  background: #3A6F8F
+  color: #fff
+  width: 80px
+  cursor: pointer
+  text-transform: uppercase
+  padding: 6px 12px 7px
+  box-sizing: border-box
+  transition: .3s ease
+  font:
+    size: 13px
+    family: 'SegoeUI-Bold', sans-serif
+  &:hover
+    background: $accent
+
+.btn-accent
+  font:
+    size: 13px
+    family: 'SegoeUI-Bold', sans-serif
+  text-transform: uppercase
+  background: $accent
+  color: #FFFFFF
+  padding: 13px 20px
+  &:hover
+    background: $accent2
+
+.btn-default
+  background: #FFFFFF
+  color: $accent
+  padding: 20px
+  box-sizing: border-box
+  font:
+    family: 'SegoeUI-Bold', sans-serif
+    size: 14px
+  text-transform: uppercase
+  &:hover
+    background: $accent2
+    color: #FFFFFF
+
+.fa-close
+  color: #3A6F8F
+  margin-left: 16px
+  font-size: 16px
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    color: $accent
+
+.links
+  font-size: 20px
+  color: rgba(#000, .5)
+  &:hover
+    color: $sale
+
+.links-sale
+  background: $sale
+  color: #FFFFFF
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    background: $accent2
+
+//button  end
+
+input, textarea
+  text-decoration: none
+  border: none
+    radius: 0
+  background: #FFFFFF
+  box-sizing: border-box
+  transition: .4s ease
+  padding: 0 10px
+  height: 30px
+  width: 100%
+  outline: none
+  cursor: pointer
+  font:
+    size: 13px
+    family: 'SegoeUI-Bold', sans-serif
+  &:hover
+    box-shadow: 0 0 10px 0 rgba($accent, .2)
+
+.section-title
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  margin: 60px 0 29px
+  width: 100%
+
+
+.logo-item
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  a
+    width: 240px
+  p
+    margin: 0 0 0 25px
+    width: 30%
+    font:
+      size: 13px
+    color: #888
+
+.breadcrumbs-wrapper
+  background: #e9eaec
+  padding: 15px 0
+
+.breadcrumbs
+  display: flex
+  flex-direction: row
+  align-items: center
+  flex-wrap: wrap
+  li
+    font:
+      size: 14px
+    a
+      color: $accent
+      padding: 0 28px 0 0
+      position: relative
+      &:before
+        content: '>'
+        position: absolute
+        top: 0
+        right: 12px
+        font-size: 14px
+      &:hover
+        color: $sale
+    span
+      color: #00a8ea
+
+
+
+.container
+  width: 1200px
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  box-sizing: border-box
+
+.wrapper
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+//menu
+.menu
+  background: $bg-title
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  z-index: 2
+  .menu__group
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    >li
+      display: flex
+      align-items: center
+      justify-content: center
+      flex: 1
+      transition: .3s ease
+      height: 65px
+      text-transform: uppercase
+      font:
+        size: 14px
+        family: 'SegoeUI-Bold', sans-serif
+      &:hover
+        background: $accent2
+      >a
+        color: #FFFFFF
+        transition: .3s ease
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        width: 100%
+        box-sizing: border-box
+        span
+          margin-right: 5px
+
+  .btn-cart
+    cursor: pointer
+    color: #FFFFFF
+    a
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+    svg
+      margin-right: 10px
+      path, circle
+        stroke: #fff
+  .btn-catalog-menu
+    position: relative
+    &:hover
+      .catalog-menu
+        opacity: 1
+        visibility: visible
+
+
+.catalog-menu
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  z-index: 3
+  top: 65px
+  left: 0
+  width: 950px
+  overflow-y: auto
+  background: $accent2
+  transition: .3s ease
+  .dropdown-menu
+    column-count: 5
+    height: auto
+    padding: 25px
+    width: 100%
+    >li
+      margin-bottom: 10px
+    li
+      color: #FFFFFF
+      box-sizing: border-box
+      padding: 0 5px 5px
+      a
+        color: #FFFFFF
+        text-transform: uppercase
+        &:hover
+          color: $accent
+    .dropdown-menu__level1
+      font:
+        family: 'SegoeUI-Bold', sans-serif
+      position: relative
+      padding: 0 5px 5px 15px
+      &:before
+        content: '\f1db'
+        font-family: 'fontawesome', sans-serif
+        position: absolute
+        left: 0
+        top: 7px
+        font-size: 7px
+    .dropdown-menu__level2
+      font-family: $default-font
+      list-style: square
+      padding: 0 5px 0 20px
+//menu end
+
+//slider
+.slick-dots
+  bottom: 24px
+  left: 0
+  right: 0
+  width: 20%
+  margin: 0 auto
+  li
+    margin: 0 3px
+    padding: 0
+    width: 14px
+    height: 20px
+    background: url("../img/dots.png") no-repeat right center
+    button
+      display: none
+  .slick-active
+    background-position: 1px center
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+.slick-slide
+  text-align: center
+//slider end
+
+
+header
+  .header__top
+    background: #fff
+    .container
+      flex-direction: row
+      justify-content: space-between
+      .header__top-left, .header__top-right
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        width: 50%
+        border-top: 5px solid #223e99
+      .header__top-right
+        border-color: $accent2
+
+.search-item
+  width: 30%
+
+.search-item__open, .compare-item
+  padding: 15px
+  box-sizing: border-box
+  background: #e9eaec
+  display: flex
+  align-items: center
+  justify-content: center
+  font:
+    size: 15px
+    family: 'SegoeUI-Bold', sans-serif
+  text-transform: uppercase
+  color: $accent
+  cursor: pointer
+  height: 82px
+  transition: .3s ease
+  &:hover
+    background: $accent
+    color: #fff
+    svg
+      stroke: #fff
+  span
+    margin: 0 5px 0 0
+    width: 20px
+    height: 20px
+  svg
+    stroke: $accent
+    transition: .3s ease
+    width: 100%
+    height: 100%
+
+.form-search-wrapper
+  position: absolute
+  left: 0
+  top: 87px
+  background: #e0e7ea
+  width: 100%
+  padding: 20px
+  box-sizing: border-box
+  z-index: 3
+  display: none
+
+.form-search
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  .input-group
+    width: calc(100% - 109px)
+
+
+.compare-item
+  background: transparent
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 10px 20px
+  height: 82px
+  box-sizing: border-box
+  svg
+    stroke: $accent
+
+
+.phone-item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  a
+    font:
+      family: 'SegoeUI-Bold', sans-serif
+      size: 20px
+    color: #000
+
+
+//content
+.main__slider
+  max-height: 720px
+  min-height: 66px
+  margin-top: -65px
+  overflow: hidden
+  z-index: 1
+  .slick-arrow
+    display: none
+  .slide
+    position: relative
+    img
+      margin: 0 auto
+    .container
+      position: absolute
+      color: #fff
+      left: 0
+      bottom: 0
+      right: 0
+      width: 1200px
+      z-index: 2
+      .description
+        width: 48%
+        text-align: left
+        .title
+          font:
+            family: 'SegoeUI-Bold', sans-serif
+            size: 50px
+          margin: 0 0 5px 0
+        p
+          overflow: hidden
+          margin: 0 0 10px
+          font:
+            size: 18px
+        a
+          margin-bottom: 5px
+          display: inline-block
+
+.advantages
+  background: $bg
+  .container
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+
+    .item
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      flex: 1
+      position: relative
+      padding: 47px 0 39px
+      transition: .4s ease
+      &:before, &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 0
+        height: 5px
+        background: #0a84c0
+        opacity: 0
+        transition: .5s ease
+      &:after
+        background: $sale
+        left: 50%
+      &:before
+        right: 50%
+      &:hover
+        background: #FFFFFF
+        &:after, &:before
+          width: 50%
+          opacity: 1
+      .icon
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        svg
+          fill: $accent
+          width: 100%
+          height: 100%
+      a
+        margin-left: 20px
+        text-transform: uppercase
+        font:
+          size: 20px
+          family: 'SegoeUI-SemiBold', sans-serif
+        color: $accent
+        max-width: 180px
+      &:nth-child(2)
+        .icon
+          width: 31px
+          //height: 50px
+      &:nth-child(3)
+        .icon
+          width: 44px
+          //height: 44px
+      &:nth-child(4)
+        .icon
+          width: 32px
+          //height: 50px
+
+//content end
+
+//cart
+.card
+  display: flex
+  flex-direction: column
+  background: $bg
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2)
+  width: 278px
+  margin-bottom: 30px
+  transition: .3s ease
+  &:hover
+    box-shadow: 0 0 35px rgba($accent2, 0.2)
+    .card__title
+      background: $accent2
+  .card__title
+    background: $bg-title
+    padding: 20px 15px 17px
+    box-sizing: border-box
+    text-align: center
+    font:
+      family: 'SegoeUI-SemiBold', sans-serif
+      size: 18px
+    color: #fff
+    transition: .3s ease
+    display: flex
+    align-items: center
+    justify-content: center
+  .card__image
+    width: 100%
+    height: 225px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 18px
+    box-sizing: border-box
+    background: #FFFFFF
+    img
+      height: 100%
+      width: auto
+      max-width: none
+  .viability
+    background: rgba($accent, .1)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 16px 20px 14px
+    box-sizing: border-box
+    font-size: 14px
+    color: #010101
+    .icon
+      width: 20px
+      height: 20px
+      svg
+        stroke: rgba(#223e99, .25)
+        width: 100%
+        height: 100%
+  .card__footer
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 17px 20px 18px
+    box-sizing: border-box
+    .price
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      .new-price
+        color: #000000
+        font-size: 18px
+      .old-price
+        text-decoration: line-through
+        color: #bababa
+        font-size: 16px
+        margin-bottom: 3px
+
+//cart end
+
+
+//banner
+.banner
+  margin-top: 30px
+  .container
+    flex-direction: row
+    justify-content: space-between
+    .item
+      width: 50%
+      height: 130px
+      position: relative
+      &:before
+        content: '\f105'
+        font:
+          size: 20px
+          family: 'fontawesome', sans-serif
+        position: absolute
+        right: 50px
+        top: 40%
+        color: $accent
+        background: #FFFFFF
+        width: 50px
+        height: 50px
+        opacity: 0
+        visibility: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: .4s linear
+      &:hover
+        &:before
+          opacity: 1
+          visibility: visible
+      h3
+        position: absolute
+        left: 50px
+        top: 50%
+        color: #FFFFFF
+        font-size: 24px
+
+//banner end
+
+
+//advantages
+.advantages__item
+  position: relative
+  cursor: pointer
+  height: 300px
+  overflow: hidden
+  box-sizing: border-box
+  &:before
+    content: '\f105'
+    font:
+      size: 20px
+      family: 'fontawesome', sans-serif
+    position: absolute
+    right: 50px
+    top: 75%
+    color: $accent
+    background: #FFFFFF
+    width: 50px
+    height: 50px
+    opacity: 0
+    visibility: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .4s linear
+    z-index: 2
+  &:hover
+    &:before
+      opacity: 1
+      visibility: visible
+  h3
+    position: absolute
+    left: 0
+    top: 70%
+    padding: 0 50px
+    box-sizing: border-box
+    color: #FFFFFF
+    font:
+      weight: bold
+      size: 24px
+    max-width: 340px
+  .image
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    img
+      height: 100%
+      width: auto
+      max-width: none
+.advantages__max
+  width: 66.67%
+
+.advantages__min
+  width: 33.33%
+  background: $sale
+  .icon
+    margin: 10% 0 0 50px
+    width: 120px
+    height: 104px
+    display: inline-block
+
+//advantages end
+
+
+//brands
+.brands__slider
+  background: #eee
+  padding: 45px 140px
+  .slick-track
+    display: flex
+    align-items: center
+    justify-content: center
+  .slick-arrow
+    position: absolute
+    height: 100%
+    width: 90px
+    background: #999
+    z-index: 2
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .4s ease
+    &:focus
+      background: $accent
+      &:before
+        color: #fff
+  .slick-prev
+    left: 0
+    &:before
+      content: '\f104'
+      font:
+        family: 'fontawesome', sans-serif
+      opacity: 1
+  .slick-next
+    right: 0
+    &:before
+      content: '\f105'
+      font:
+        family: 'fontawesome', sans-serif
+      opacity: 1
+      left: 0
+      right: 0
+  .logo-brand
+    margin: 0 auto
+    max-width: 180px
+    img
+      margin: 0 auto
+//brands end
+
+
+//stages
+.stages
+  .item
+    display: flex
+    flex-direction: row
+    align-items: center
+    height: 125px
+    width: 380px
+    margin-bottom: 29px
+    .icon
+      background: $accent
+      width: 100px
+      min-width: 100px
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      svg
+        fill: #FFFFFF
+    .text
+      background-color: #eeeeee
+      height: 100%
+      width: calc(100% - 100px)
+      box-sizing: border-box
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 10px 20px
+      h5
+        font:
+          size: 22px
+          family: 'SegoeUI-SemiBold', sans-serif
+        margin-bottom: 13px
+        line-height: 22px
+      p
+        line-height: 18px
+    &:first-child
+      .icon
+        svg
+          width: 65px
+          height: 38px
+    &:nth-child(2)
+      .icon
+        svg
+          width: 55px
+          height: 52px
+    &:last-child
+      .icon
+        svg
+          width: 49px
+          height: 54px
+
+.work-banner
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  .item
+    position: relative
+    width: 50%
+    height: 130px
+    margin: 0
+    h3
+      color: #FFFFFF
+      position: absolute
+      left: 10%
+      top: 40%
+      font:
+        weight: bold
+        size: 24px
+      max-width: 300px
+    &:last-child
+      h3
+        top: 30%
+
+//stages end
+
+.content-seo .wrapper.on
+  justify-content: flex-start
+  .preview_item
+    margin: 0 15px 29px 0
+
+.content-seo .wrapper
+  transition: 2s ease
+
+.preview_item.active
+  position: relative
+  padding: 40px 30px 30px
+  overflow: hidden
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.12)
+  background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+  width: 100%
+  height: auto
+  order: -1
+  transition: height 2s, width 2s
+  img
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    height: auto
+    min-height: 100%
+    width: auto
+    max-width: none
+    margin: 0 auto
+    z-index: -1
+  .text
+    z-index: 2
+    position: relative
+    display: block
+  h3
+    color: #333333
+    margin-bottom: 40px
+    z-index: 2
+  p
+    color: #333333
+    margin-bottom: 10px
+  .links
+    color: #333333
+    font-size: 20px
+    float: right
+    position: relative
+    right: 0
+    bottom: 0
+
+
+
+.preview_item
+  width: 380px
+  height: 300px
+  background: rgba(#000, .65)
+  position: relative
+  overflow: hidden
+  padding: 30px 20px 20px 30px
+  box-sizing: border-box
+  color: #fefefe
+  margin-bottom: 29px
+  transition: height 2s, width 2s
+
+  h3
+    font:
+      weight: bold
+      size: 24px
+  img
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    height: 100%
+    width: auto
+    max-width: none
+    margin: 0 auto
+    z-index: -1
+  .text
+    display: none
+  .links
+    color: rgba(#fff, .5)
+    font-size: 20px
+    position: absolute
+    right: 20px
+    bottom: 30px
+
+.footer
+  background: $bg
+  .container
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    padding: 40px 0
+    .logo
+      width: 229px
+    .list-group
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-left: 30px
+      li
+        margin-right: 18px
+        a
+          display: flex
+          flex-direction: row
+          align-items: center
+          font-size: 14px
+          color: $accent
+      .icon
+        margin-right: 6px
+        display: flex
+        align-items: center
+        justify-content: center
+        svg
+          stroke: $accent
+          width: 100%
+          height: 100%
+    .phone-item
+      flex-direction: row
+      align-items: center
+      margin-left: auto
+      a
+        color: #000000
+        font:
+          weight: normal
+          family: $default-font
+          size: 14px
+        margin-right: 22px
+
+.btn-mobile
+  display: none
+
+.panel-mobile
+  position: fixed
+  left: -100%
+  top: 0
+  width: 270px
+  height: 100%
+  background: $bg-title
+  z-index: 7
+  overflow-y: auto
+  .close
+    padding: 10px 20px
+    color: #fff
+    width: 100%
+    text-align: right
+    display: block
+    border-bottom: 1px solid rgba(#fff, .3)
+  .menu
+    background: transparent
+    flex-direction: column
+    ul
+      flex-direction: column
+      li
+        height: auto
+        width: 100%
+        justify-content: flex-start
+        padding: 10px 20px
+        border-bottom: 1px solid rgba(#fff, .3)
+        a
+          text-align: left
+          justify-content: flex-start
+      .btn-cart
+        padding-top: 20px
+        border-bottom: none
+  .box
+    h2
+      font-size: 20px
+      color: #FFFFFF
+      padding: 0 10px
+    .button-group
+      a
+        font-size: 14px
+        padding: 10px 0
+        width: 90%
+        margin: 0 auto
+  .list-category
+    li
+      padding: 0 !important
+  .filter-list
+    li
+      color: #fff
+      font-size: 14px
+      padding: 5px 10px
+      border-color: rgba(#fff, .3)
+      a
+        color: #FFFFFF
+        padding: 5px 10px
+      ul
+        li
+          a
+            color: #fff
+  .range_val
+    .inp-group
+      font-size: 14px
+      .text
+        color: #FFFFFF
+    input
+      color: #FFFFFF
+      border-color: #FFFFFF
+
+
+
+
+
+
+#overlay
+  background: rgba(#000,.7)
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 6
+  display: none
+
+//page content
+.page-title
+  background: $accent
+  margin-top: -65px
+
+.content-wrapper
+  margin: 30px 0 59px
+  width: 100%
+  .container
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+    h2
+      font-size: 26px
+
+
+
+.sidebar
+  width: 278px
+  background: $bg
+  padding: 30px 20px
+  box-sizing: inherit
+  display: flex
+  flex-direction: column
+
+.box
+  display: flex
+  flex-direction: column
+  margin-bottom: 60px
+  &:last-child
+    margin-bottom: 0
+  .button-group
+    margin: 10px 0 0 0
+    a
+      width: 100%
+      padding: 13px 0
+      font:
+        family: 'SegoeUI-SemiBold', sans-serif
+        size: 18px
+      text-transform: uppercase
+      display: flex
+      align-items: center
+      justify-content: center
+
+
+//page content end
+
+.panel_heading
+  box-sizing: border-box
+  .block_title
+    box-sizing: border-box
+    transition: .3s ease
+    cursor: pointer
+    position: relative
+    &:before
+      content: '\f107'
+      position: absolute
+      right: 9px
+      top: 0
+      cursor: pointer
+      font-family: 'fontawesome', sans-serif
+      transition: .3s ease
+
+  .block_hover
+    padding: 12px 0 8px
+    display: none
+    ul
+      li
+        padding: 0
+        font-size: 14px
+        border: none
+        a
+          padding: 5px 0
+          color: #000
+          &:hover
+            color: $accent
+
+
+.in
+  h3
+    font-family: 'SegoeUI-SemiBold', sans-serif
+  &:before
+    transform: rotate(180deg)
+    font-weight: 600
+
+.filter-list
+  display: flex
+  flex-direction: column
+  li
+    padding: 10px 9px
+    font-size: 18px
+    color: #333333
+    border-bottom: 1px solid rgba(#000, .1)
+    a
+      color: #666666
+      padding: 10px 9px
+
+.list-category
+  li
+    padding: 0
+    .current
+      background-image: linear-gradient(to right, #00a8ea 0%, rgba(0, 168, 234, 0) 100%)
+      color: #FFFFFF
+
+.range_val
+  position: relative
+  margin: 0 0 26px 0
+  .dec2
+    border-color: rgba(#91919d, .5)
+    color: rgba(#444, .5)
+  input
+    width: 75px
+    height: 25px
+    border: 2px solid #91919d
+    background: transparent
+    box-sizing: inherit
+    padding: 6px 11px
+    text-align: left
+    color: #333333
+    cursor: pointer
+    font:
+      size: 15px
+      family: $default-font
+  .inp-group
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    .text
+      color: #333333
+      font-size: 18px
+      line-height: 18px
+
+.slider-range
+  height: 3px
+  background: #91919d
+  position: relative
+  border-radius: 2px
+
+.ui-state-default, .ui-slider-handle
+  width: 18px
+  height: 18px
+  box-sizing: border-box
+  background: $accent
+  display: inline-block
+  position: absolute
+  box-shadow: 0 0 7px rgba(51, 51, 51, 0.4)
+  outline: none
+  top: -7px
+  cursor: pointer
+  border: none
+    radius: 50%
+
+
+.page-content
+  width: calc(100% - 300px)
+  .description-text
+    font:
+      size: 14px
+    p
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+
+
+.sort-wrapper
+  display: flex
+  flex-direction: column
+  h2
+    margin: 29px 0
+    width: 100%
+    text-align: left
+  .sort-line
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    flex-wrap: wrap
+    margin: 40px 0 20px
+    .sort-dropdown
+      position: relative
+      display: flex
+      flex-direction: column
+      margin-left: 17px
+      &:first-child
+        margin-left: 0
+        min-width: 204px
+      .btn-dropdown
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        border: 2px solid #91919d
+        box-sizing: border-box
+        font-size: 15px
+        color: #333333
+        padding: 2px 9px
+        cursor: pointer
+        .icon
+          margin-left: 10px
+          transition: .3s ease
+      .in
+        .icon
+          transform: rotate(180deg)
+
+
+
+.list-firm
+  column-count: 4
+  li
+    a
+      color: $accent
+      font:
+        size: 18px
+      text-transform: uppercase
+      margin-bottom: 5px
+      &:hover
+        color: $sale
+
+.droprown-menu
+  position: absolute
+  left: 0
+  top: 27px
+  width: 100%
+  height: auto
+  background: #FFFFFF
+  z-index: 2
+  display: none
+  li
+    a
+      padding: 5px 10px
+      &:hover
+        background: $accent
+        color: #FFFFFF
+
+.pagination-wrapper
+  margin: 40px auto
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  .pagination
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    li
+      a
+        color: $accent
+        width: 36px
+        height: 36px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 18px
+      .active
+        background: $accent
+        color: #FFFFFF
+
+.product-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  margin: 0 0 60px 0
+
+.product-image
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 585px
+
+.product-image__max
+  width: 100%
+  height: 350px
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  a
+    position: relative
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba($accent, .3)
+  &:hover
+    .loop
+      background: $sale
+  .loop
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    top: 50%
+    width: 75px
+    height: 75px
+    border-radius: 50%
+    box-shadow: 0 0 25px rgba(10, 69, 149, 0.5)
+    background: $accent
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .4s ease
+    svg
+      width: 37px
+      height: 37px
+      stroke: #FFFFFF
+
+.product-image__min
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  .item
+    width: 195px
+    height: 150px
+    overflow: hidden
+    display: flex !important
+    align-items: center
+    justify-content: center
+    position: relative
+    transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba(#1f1f1f, .35)
+  .click-item
+    &:before, &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      top: auto
+      width: 50%
+      height: 5px
+      background: #0a84c0
+      transition: .5s ease
+      z-index: 2
+    &:after
+      background: $sale
+      left: 50%
+    &:before
+      right: 50%
+
+
+.product-text
+  width: calc(100% - 635px)
+  .line
+    display: flex
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+  .line-price
+    font-size: 34px
+    margin-bottom: 40px
+    justify-content: flex-start
+    .price
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-left: 5px
+      .old-price
+        color: #bababa
+        font-size: 25px
+        line-height: 25px
+        margin-left: 5px
+        text-decoration: line-through
+  .button-group
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    a
+      color: #FFFFFF
+      text-transform: none
+      display: flex
+      flex-direction: row
+      align-items: center
+      font:
+        weight: normal
+        family: $default-font
+        size: 25px
+      padding: 13px 30px
+      .icon
+        margin-right: 17px
+        svg
+          width: 22px
+          height: 22px
+          stroke: #FFFFFF
+          path, circle
+            stroke: #fff
+    .btn-one-click
+      padding: 13px 40px
+      margin-left: 20px
+
+.btn-compare
+  display: flex
+  flex-direction: row
+  align-items: center
+  color: $accent2
+  font-size: 14px
+  .icon
+    margin-right: 5px
+    svg
+      stroke: $accent2
+
+.article
+  color: #666666
+  padding: 14px 20px
+  background-color: #e9eaec
+
+
+.list-equipment
+  display: flex
+  flex-direction: column
+  margin: 90px 0 60px
+  li
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 0
+    .total
+      font-family: 'SegoeUI-SemiBold', sans-serif
+      color: #000000
+
+
+.checkbox
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 16px
+    height: 16px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #223e99
+    opacity: .25
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+  .label
+    display: inline-block
+    vertical-align: middle
+    color: $accent
+    cursor: pointer
+    font:
+      size: 16px
+    margin-left: 9px
+  .checkbox-inp:checked + .checkbox-custom
+    opacity: 1
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: -2px
+      right: 0
+      bottom: 0
+      left: 0
+      margin: 0 auto
+      width: 22px
+      height: 18px
+      background: url("../img/check.png") no-repeat center
+        size: contain
+      opacity: 1
+
+.description-wrapper
+  background-color: #f4f4f5
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 30px 30px 89px
+  box-sizing: border-box
+  .product-item
+    width: 50%
+    h2
+      font:
+        weight: normal
+        family: $default-font
+        size: 30px
+      display: flex
+      flex-direction: row
+      align-items: center
+      .icon
+        margin-right: 20px
+        width: 65px
+        display: flex
+        align-items: center
+        justify-content: center
+        svg
+          fill: $accent
+    .text
+      margin-top: 16px
+      padding: 0 20px 0 85px
+      p
+        color: #000000
+        line-height: 24px
+      .list
+        width: 300px
+        //position: relative
+        li
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          font-size: 18px
+          color: #000
+          margin-bottom: 10px
+          position: relative
+          overflow: hidden
+          &:before
+            content: '··········································'
+            position: absolute
+            left: 2px
+            top: 0
+            width: 100%
+            letter-spacing: 4px
+            color: rgba($accent, .1)
+            //z-index: -1
+          &:last-child
+            margin-bottom: 0
+          span
+            font-family: 'SegoeUI-Light', sans-serif
+            background: #f4f4f5
+            z-index: 1
+          p
+            background: #f4f4f5
+            z-index: 1
+  .product-description
+    svg
+      width: 52px
+      height: 62px
+  .product-options
+    svg
+      width: 62px
+      height: 62px
+
+.related-products
+  margin: 0 0 80px
+
+
+@import "media"
+// Всегда в конце

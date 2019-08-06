@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Водолей - интернет-магазин сантехники</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<header class="header">
+    <div id="mobile-menu" class="panel-mobile">
+        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <div class="menu">
+            <ul class="list-group menu__group">
+                <li class="list-group__item"><a href="#">Распродажи</a></li>
+                <li class="list-group__item"><a href="#"><p>Каталог</p></a></li>
+                <li class="list-group__item"><a href="#">О нас</a></li>
+                <li class="list-group__item"><a href="#">Сервис</a></li>
+                <li class="list-group__item"><a href="#">Как купить</a></li>
+                <li class="list-group__item"><a href="#">Полезно знать</a></li>
+                <li class="list-group__item"><a href="#">Контакты</a></li>
+                <li class="list-group__item btn-cart">
+                        <span class="icon">
+                            <?xml version="1.0" ?>
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle
+                                    cx="8" cy="21" fill="none" r="2" stroke="#000" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"/><circle cx="20" cy="21" fill="none" r="2"
+                                                                                      stroke="#000"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                      stroke-width="2"/><path
+                                    d="M5.67,6H23l-1.68,8.39a2,2,0,0,1-2,1.61H8.75a2,2,0,0,1-2-1.74L5.23,2.74A2,2,0,0,0,3.25,1H1"
+                                    fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"/></svg>
+                        </span>
+                    <p>корзина</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-left">
+
+                <div class="btn-mobile btn-mobile-menu">
+                    <span class="fa fa-bars"></span>
+                </div>
+
+                <div class="logo-item">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    <p>Интернет-магазин сантехники</p>
+                </div>
+
+                <div class="search-item">
+                    <div class="search-item__open">
+                        <span class="icon">
+                            <?xml version="1.0" ?>
+                            <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle
+                                    cx="10.5" cy="10.5" r="7.5"/><line x1="21" x2="15.8" y1="21" y2="15.8"/></svg>
+                        </span>
+                        <p>Поиск</p>
+                    </div>
+
+                    <div class="form-search-wrapper">
+                        <form method="post" class="form-search">
+                            <div class="input-group">
+                                <input type="text" name="search" maxlength="200" placeholder="Введите запрос">
+                            </div>
+                            <button type="submit" class="btn-submit">Найти</button>
+                            <span class="fa fa-close"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__top-right">
+                <a href="#" class="compare-item">
+                    <span class="icon">
+                        <?xml version="1.0" ?>
+                        <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                             stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon
+                                points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline
+                                points="2 12 12 17 22 12"/></svg>
+                    </span>
+                    <p>сравнить</p>
+                </a>
+
+                <div class="btn-mobile btn-phone">
+                    <span class="icon">
+                    <?xml version="1.0" ?>
+                        <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                             stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path
+                                d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                </div>
+
+                <div class="phone-item">
+                    <a href="tel:+78612110256">8(861)211-02-56</a>
+                    <a href="tel:+78619923131">8(861)992-31-31</a>
+                </div>
+
+                <div class="cart btn-mobile cart-mobile">
+                    <span class="icon">
+                            <?xml version="1.0" ?>
+                        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle
+                                cx="8" cy="21" fill="none" r="2" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"/><circle cx="20" cy="21" fill="none" r="2"
+                                                                                  stroke="#000" stroke-linecap="round"
+                                                                                  stroke-linejoin="round"
+                                                                                  stroke-width="2"/><path
+                                d="M5.67,6H23l-1.68,8.39a2,2,0,0,1-2,1.61H8.75a2,2,0,0,1-2-1.74L5.23,2.74A2,2,0,0,0,3.25,1H1"
+                                fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"/></svg>
+                        </span>
+                    <span class="total">1</span>
+                </div>
+
+                <div class="callbak-item">
+                    <a class="btn-accent btn-callback" href="#">обратный звонок</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header__menu">
+        <div class="container">
+
+            <div class="menu">
+                <ul class="list-group menu__group">
+                    <li class="list-group__item links-sale"><a href="#">Распродажи</a></li>
+                    <li class="list-group__item btn-catalog-menu">
+                        <a href="#">
+                            <span class="fa fa-bars"></span>
+                            <p>Каталог</p>
+                        </a>
+
+                        <div class="catalog-menu">
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">Аксессуары</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">HANSGROHE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">БИДЕ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">DELLA</a></li>
+                                        <li><a href="#">DURAVIT</a></li>
+                                        <li><a href="#">IFO</a></li>
+                                        <li><a href="#">JIKA</a></li>
+                                        <li><a href="#">KALE</a></li>
+                                        <li><a href="#">ROCA</a></li>
+                                        <li><a href="#">ROSA Киров</a></li>
+                                        <li><a href="#">SANITA </a></li>
+                                        <li><a href="#">АКВАНЕТ</a></li>
+                                        <li><a href="#">САНТЕК</a></li>
+                                        <li><a href="#">SANITA LUXE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ВАННЫ АКРИЛОВЫЕ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">1 МАРКА</a></li>
+                                        <li><a href="#">AquaVel</a></li>
+                                        <li><a href="#">JIKA</a></li>
+                                        <li><a href="#">АКВАНЕТ</a></li>
+                                        <li><a href="#">АКВАТЕК</a></li>
+                                        <li><a href="#">БАС </a></li>
+                                        <li><a href="#">МИРСАНТ</a></li>
+                                        <li><a href="#">РАДОМИР</a></li>
+                                        <li><a href="#">ТРИТОН</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ВАННЫ СТАЛЬНЫЕ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">KALDEWEI</a></li>
+                                        <li><a href="#">ROCA</a></li>
+                                        <li><a href="#">ВLВ</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ВАННЫ ЧУГУННЫЕ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">ROCA</a></li>
+                                        <li><a href="#">УНИВЕРСАЛ Россия</a></li>
+                                        <li><a href="#">AQUANET</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ВОДОНАГРЕВАТЕЛИ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">ТЕРМЕКС</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШ ВЕРХНИЙ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">HANSGROHE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ ГАРНИТУРЫ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">HANSGROHE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ ОГРАЖДЕНИЯ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">APPOLLO </a></li>
+                                        <li><a href="#">AZARIO</a></li>
+                                        <li><a href="#">CEZARES</a></li>
+                                        <li><a href="#">БАС </a></li>
+                                        <li><a href="#">СЕАН</a></li>
+                                        <li><a href="#">LORANTO</a></li>
+                                        <li><a href="#">DANA </a></li>
+                                        <li><a href="#">ТРИТОН</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ ПОДДОНЫ </a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">LORANTO</a></li>
+                                        <li><a href="#">БАС</a></li>
+                                        <li><a href="#">СЕАН</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ ТРАПЫ </a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">ALCAPLAST</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ИНСТАЛЛЯЦИИ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">ALCAPLAST</a></li>
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">GEBERIT</a></li>
+                                        <li><a href="#">ROCA</a></li>
+                                        <li><a href="#">GROHE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">КЕРАМИЧЕСКАЯ
+                                                                                                  ПЛИТКА</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">Ceramica Classic</a></li>
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">Gracia Ceramica</a></li>
+                                        <li><a href="#">АЗОРИ</a></li>
+                                        <li><a href="#">УРАЛКЕРАМИКА</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">КЕРАМОГРАНИТ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">Gracia Ceramica</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">Комплектующие</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">BLB </a></li>
+                                        <li><a href="#">CEZARES</a></li>
+                                        <li><a href="#">FENIX</a></li>
+                                        <li><a href="#">GEBERIT</a></li>
+                                        <li><a href="#">Jacob Delafon</a></li>
+                                        <li><a href="#">SANTERI ВОРОТЫНСК</a></li>
+                                        <li><a href="#">ВАНЕССА</a></li>
+                                        <li><a href="#">МИРСАНТ</a></li>
+                                        <li><a href="#">РАДОМИР</a></li>
+                                        <li><a href="#">HANSGROHE</a></li>
+                                        <li><a href="#">JIKA </a></li>
+                                        <li><a href="#">АКВАТОН</a></li>
+                                        <li><a href="#">УНИВЕРСАЛ</a></li>
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">DELLA</a></li>
+                                        <li><a href="#">DURAVIT</a></li>
+                                        <li><a href="#">IFO</a></li>
+                                        <li><a href="#">KALDEWEI</a></li>
+                                        <li><a href="#">ROSA Киров</a></li>
+                                        <li><a href="#">АКВАНЕТ</a></li>
+                                        <li><a href="#">БАС </a></li>
+                                        <li><a href="#">САНТЕК</a></li>
+                                        <li><a href="#">LAUFEN</a></li>
+                                        <li><a href="#">1 МАРКА</a></li>
+                                        <li><a href="#">ROCA </a></li>
+                                        <li><a href="#">Sanita lux</a></li>
+                                        <li><a href="#">АКВАТЕК</a></li>
+                                        <li><a href="#">ТРИТОН </a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ПИССУАРЫ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">SANITA </a></li>
+                                        <li><a href="#">SANITA LUXE</a></li>
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">JIKA</a></li>
+                                        <li><a href="#">ROSA Киров</a></li>
+                                        <li><a href="#">САНТЕК</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ПОЛОТЕНЦЕСУШИТЕЛИ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">МАРГРОИД</a></li>
+                                        <li><a href="#">FENIX</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">РАКОВИНЫ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">JIKA</a></li>
+                                        <li><a href="#">SANITA</a></li>
+                                        <li><a href="#">SANITA LUXE</a></li>
+                                        <li><a href="#">SANTERI ВОРОТЫНСК</a></li>
+                                        <li><a href="#">DELLA</a></li>
+                                        <li><a href="#">IFO</a></li>
+                                        <li><a href="#">DURAVIT</a></li>
+                                        <li><a href="#">Kale</a></li>
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">ROSA Киров</a></li>
+                                        <li><a href="#">САНТЕК</a></li>
+                                        <li><a href="#">ROCA</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">УНИТАЗЫ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">IFO</a></li>
+                                        <li><a href="#">SANITA </a></li>
+                                        <li><a href="#">SANITA LUXE</a></li>
+                                        <li><a href="#">JIKA</a></li>
+                                        <li><a href="#">Jacob Delafon</a></li>
+                                        <li><a href="#">SANTERI ВОРОТЫНСК</a></li>
+                                        <li><a href="#">DELLA</a></li>
+                                        <li><a href="#">ROCA</a></li>
+                                        <li><a href="#">SOLE</a></li>
+                                        <li><a href="#">DURAVIT</a></li>
+                                        <li><a href="#">Kale</a></li>
+                                        <li><a href="#">CERSANIT</a></li>
+                                        <li><a href="#">LAUFEN</a></li>
+                                        <li><a href="#">ROSA Киров</a></li>
+                                        <li><a href="#">САНТЕК</a></li>
+                                        <li><a href="#">АКВАНЕТ</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ КАБИНЫ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">APPOLLO </a></li>
+                                        <li><a href="#">DANA </a></li>
+                                        <li><a href="#">LORANTO</a></li>
+                                        <li><a href="#">СЕАН</a></li>
+                                        <li><a href="#">ТРИТОН</a></li>
+                                        <li><a href="#">БАС </a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ ЛЕЙКИ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">HANSGROHE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">ДУШЕВЫЕ СИСТЕМЫ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">FRAP</a></li>
+                                        <li><a href="#">HANSGROHE</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">МЕБЕЛЬ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">БАС</a></li>
+                                        <li><a href="#">АКВАНЕТ</a></li>
+                                        <li><a href="#">ТРИТОН </a></li>
+                                        <li><a href="#">АКВАТОН </a></li>
+                                        <li><a href="#">МИРСАНТ</a></li>
+                                        <li><a href="#">ROCA</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-menu__level1 dropdown-menu__list"><a href="#">СМЕСИТЕЛИ</a>
+                                    <ul class="dropdown-menu__level2 dropdown-menu__list">
+                                        <li><a href="#">BRAVAT</a></li>
+                                        <li><a href="#">CEZARES</a></li>
+                                        <li><a href="#">LEMARK</a></li>
+                                        <li><a href="#">FRAP</a></li>
+                                        <li><a href="#">HANSGROHE</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-group__item"><a href="#">О нас</a></li>
+                    <li class="list-group__item"><a href="#">Сервис</a></li>
+                    <li class="list-group__item"><a href="#">Как купить</a></li>
+                    <li class="list-group__item"><a href="#">Полезно знать</a></li>
+                    <li class="list-group__item"><a href="#">Контакты</a></li>
+                    <li class="list-group__item btn-cart">
+                        <span class="icon">
+                            <?xml version="1.0" ?>
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle
+                                    cx="8" cy="21" fill="none" r="2" stroke="#000" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"/><circle cx="20" cy="21" fill="none" r="2"
+                                                                                      stroke="#000"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                      stroke-width="2"/><path
+                                    d="M5.67,6H23l-1.68,8.39a2,2,0,0,1-2,1.61H8.75a2,2,0,0,1-2-1.74L5.23,2.74A2,2,0,0,0,3.25,1H1"
+                                    fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"/></svg>
+                        </span>
+                        <p>корзина</p>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="content">
+
+    <section class="page-title">
+        <div class="container">
+            <h1>Биде</h1>
+        </div>
+    </section>
+
+    <div class="breadcrumbs-wrapper">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><span>Биде</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="content-wrapper">
+        <div class="container">
+            <div class="sidebar">
+                <div class="box">
+                    <h2>Фильтры</h2>
+
+                    <ul class="filter-list">
+                        <li class="panel_heading">
+                            <div class="block_title">
+                                <h3>Производитель</h3>
+                            </div>
+                            <div class="block_hover">
+                                <ul>
+                                    <li><a href="#">Украина</a></li>
+                                    <li><a href="#">Россия</a></li>
+                                    <li><a href="#">Чехия</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="panel_heading">
+                            <div class="block_title">
+                                <h3>Длина</h3>
+                            </div>
+                            <div class="block_hover">
+                                <div class="range_val">
+                                    <div class="inp-group">
+                                        <span class="text">от</span>
+                                        <input type="text" name="dec" class="dec1">
+                                        <span class="text">до</span>
+                                        <input type="text" name="dec" class="dec2">
+                                    </div>
+                                </div>
+                                <div class="slider-range"></div>
+                            </div>
+                        </li>
+                        <li class="panel_heading">
+                            <div class="block_title">
+                                <h3>Ширина</h3>
+                            </div>
+                            <div class="block_hover">
+                                <div class="range_val">
+                                    <div class="inp-group">
+                                        <span class="text">от</span>
+                                        <input type="text" name="dec" class="dec1">
+                                        <span class="text">до</span>
+                                        <input type="text" name="dec" class="dec2">
+                                    </div>
+                                </div>
+                                <div class="slider-range"></div>
+                            </div>
+                        </li>
+                        <li class="panel_heading">
+                            <div class="block_title">
+                                <h3>Глубина</h3>
+                            </div>
+                            <div class="block_hover">
+                                <div class="range_val">
+                                    <div class="inp-group">
+                                        <span class="text">от</span>
+                                        <input type="text" name="dec" class="dec1">
+                                        <span class="text">до</span>
+                                        <input type="text" name="dec" class="dec2">
+                                    </div>
+                                </div>
+                                <div class="slider-range"></div>
+                            </div>
+                        </li>
+
+                        <li class="panel_heading">
+                            <div class="block_title">
+                                <h3>Цена</h3>
+                            </div>
+                            <div class="block_hover">
+                                <div class="range_val">
+                                    <div class="inp-group">
+                                        <span class="text">от</span>
+                                        <input type="text" name="dec" class="dec1">
+                                        <span class="text">до</span>
+                                        <input type="text" name="dec" class="dec2">
+                                    </div>
+                                </div>
+                                <div class="slider-range"></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="button-group"><a href="#" class="btn-accent">Показать</a><a href="#" class="links-sale">Сбросить</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h2>Категории</h2>
+
+                    <ul class="list-category filter-list">
+                        <li><a href="#">Аксессууары</a></li>
+                        <li><a href="#" class="current">Биде</a></li>
+                        <li><a href="#"> Ванны акриловые</a></li>
+                        <li><a href="#"> Ванны стальные</a></li>
+                        <li><a href="#"> Ванны чугунные</a></li>
+                        <li><a href="#">Водонагреватели</a></li>
+                        <li><a href="#"> Душ верхний</a></li>
+                        <li><a href="#"> Душевые гарнитуры</a></li>
+                        <li><a href="#"> Душевые ограждения</a></li>
+                        <li><a href="#"> Душевые поддоны</a></li>
+                        <li><a href="#"> Душевые трапы</a></li>
+                        <li><a href="#">Инсталяции</a></li>
+                        <li><a href="#"> Керамическая плитка</a></li>
+                        <li><a href="#">Керамогранит</a></li>
+                        <li><a href="#">Комплектующие</a></li>
+                        <li><a href="#">Писсуары</a></li>
+                        <li><a href="#">Полотенцесушители</a></li>
+                        <li><a href="#">Раковины</a></li>
+                        <li><a href="#">Унитазы</a></li>
+                        <li><a href="#"> Душевые кабины</a></li>
+                        <li><a href="#"> Душевые лейки</a></li>
+                        <li><a href="#"> Душевые системы</a></li>
+                        <li><a href="#">Мебель</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="sort-wrapper">
+                    <h2>Выбор фирмы</h2>
+
+                    <ul class="list-firm">
+                        <li><a href="#">CERSANIT</a></li>
+                        <li><a href="#">DELLA</a></li>
+                        <li><a href="#">DURAVIT</a></li>
+                        <li><a href="#">JIKA</a></li>
+                        <li><a href="#">KALE</a></li>
+                        <li><a href="#">ROCA</a></li>
+                        <li><a href="#">ROSA Киров</a></li>
+                        <li><a href="#">IFO</a></li>
+                        <li><a href="#">SANITA</a></li>
+                        <li><a href="#">АКВАНЕТ</a></li>
+                        <li><a href="#">САНТЕК</a></li>
+                        <li><a href="#">SANITA LUXE</a></li>
+                    </ul>
+
+                    <div class="sort-line">
+                        <div class="btn-mobile btn-filter-mobile btn-accent">
+                            <span class="icon fa fa-cogs"></span>
+                            <p>Фильтр</p>
+                        </div>
+
+                        <div class="sort-dropdown">
+                            <div class="btn-dropdown">
+                                <p>Сортировать по...</p>
+                                <span class="fa fa-angle-down icon" aria-hidden="true"></span>
+                            </div>
+
+                            <ul class="droprown-menu">
+                                <li><a href="#">наименованию</a></li>
+                                <li><a href="#">цене</a></li>
+                                <li><a href="#">алфавиту</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sort-dropdown">
+                            <div class="btn-dropdown">
+                                <p>15</p>
+                                <span class="fa fa-angle-down icon" aria-hidden="true"></span>
+
+                            </div>
+
+                            <ul class="droprown-menu">
+                                <li><a href="#">20</a></li>
+                                <li><a href="#">50</a></li>
+                                <li><a href="#">100</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">CETUS-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod4.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 7 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="old-price">220 100 руб.</div>
+                                <div class="new-price">117 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">TAVR-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod5.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 10 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">71 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">CETUS-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod4.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 7 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="old-price">220 100 руб.</div>
+                                <div class="new-price">117 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">TAVR-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod5.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 10 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">71 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">CETUS-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod4.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 7 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="old-price">220 100 руб.</div>
+                                <div class="new-price">117 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">TAVR-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod5.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 10 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">71 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">CETUS-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod4.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 7 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="old-price">220 100 руб.</div>
+                                <div class="new-price">117 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">TAVR-B2 БИДЕ ПОДВЕСНОЕ</a>
+
+                        <a href="#" class="card__image"><img src="img/prod5.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 10 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">71 190 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <a href="#" class="card__title">БИДЕ ПОДВЕСНОЕ PURE SP,1
+                                                        ОТВ.,БЕЛЫЙ,СОРТ1</a>
+
+                        <a href="#" class="card__image"><img src="img/prod3.jpg" alt=""></a>
+
+                        <div class="viability">
+                            <p>В наличии: 12 шт.</p>
+                            <span class="icon">
+<?xml version="1.0" ?>
+                                <svg fill="none" height="24" stroke="#000" stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                     xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline
+                                        points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        </span>
+                        </div>
+
+                        <div class="card__footer">
+                            <div class="price">
+                                <div class="new-price">7 398 руб.</div>
+                            </div>
+                            <a href="#" class="btn-accent">Купить</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pagination-wrapper">
+                    <ul class="pagination">
+                        <li><a href="#"><span class="fa fa-angle-double-left" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                        <li><a href="#"><span class="fa fa-angle-double-right" aria-hidden="true"></span></a></li>
+                    </ul>
+                </div>
+
+                <div class="description-text">
+                    <p>Сантехника в интернет магазине «Водолей» представлена в широком ассортименте. Не являются
+                       исключением и биде от различных производителей во всевозможных ценовых категориях. Несомненно,
+                       каждый покупатель без труда подберет именно то приспособление, которое подойдет для ванной
+                       комнаты по всем параметрам, сочетаясь и с общим интерьером помещения, и с прочей сантехникой и
+                       аксессуарами.</p>
+
+                    <p>От себя можем дать совет покупать биде одновременно с унитазом. Таким образом вы избавитесь от
+                       проблемы несовместимости оборудования и избежите возможных проблем во время установки.</p>
+
+                    <p>Отметим также, что для владельцев маленьких ванных комнат оптимальным вариантом станет выбор
+                       подвесного биде. Оно в разы компактнее обычного и устанавливается на любом уровне. Подобрав
+                       подходящую инсталляцию, вы также сможете регулировать высоту установки. Поэтому подвесное биде
+                       комфортно для использования людьми разного возраста, с любым состоянием здоровья.</p>
+
+                    <p>Напольное биде как нельзя лучше подходит для просторных ванных комнат. Кроме того, для его
+                       монтажа не требуется установки дополнительных приспособлений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <div class="container"><a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <ul class="list-group">
+            <li class="list-group__item">
+                <a href="mailto:bagva@mail.ru" class="mail">
+                    <span class="icon">
+                        <?xml version="1.0" ?>
+                        <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                             stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle
+                                cx="12" cy="12" r="4"/><path d="M16 12v1a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                    </span>
+                    <p>bagva@mail.ru</p></a>
+            </li>
+            <li><a href="#">
+                <span class="icon">
+                    <?xml version="1.0" ?>
+                    <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                         stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect
+                            height="20" rx="5" ry="5" width="20" x="2" y="2"/><path
+                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.5" y1="6.5"
+                                                                                       y2="6.5"/></svg>
+                </span>
+                <p>santehnikavodoley</p></a>
+            </li>
+        </ul>
+
+        <div class="phone-item">
+            <a href="tel:+79182910111">8(918)291-01-11</a>
+            <a href="tel:+78612110256">8(861)221-02-56</a>
+            <a href="tel:+78619923131">8(861)992-31-31</a>
+        </div>
+
+        <div class="callbak-item">
+            <a class="btn-accent btn-callback" href="#">обратный звонок</a>
+        </div>
+    </div>
+</footer>
+
+<div id="mobile-filter" class="panel-mobile">
+    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <div class="box">
+        <h2>Фильтры</h2>
+
+        <ul class="filter-list">
+            <li class="panel_heading">
+                <div class="block_title">
+                    <h3>Производитель</h3>
+                </div>
+                <div class="block_hover">
+                    <ul>
+                        <li><a href="#">Украина</a></li>
+                        <li><a href="#">Россия</a></li>
+                        <li><a href="#">Чехия</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="panel_heading">
+                <div class="block_title">
+                    <h3>Длина</h3>
+                </div>
+                <div class="block_hover">
+                    <div class="range_val">
+                        <div class="inp-group">
+                            <span class="text">от</span>
+                            <input type="text" name="dec" class="dec1">
+                            <span class="text">до</span>
+                            <input type="text" name="dec" class="dec2">
+                        </div>
+                    </div>
+                    <div class="slider-range"></div>
+                </div>
+            </li>
+            <li class="panel_heading">
+                <div class="block_title">
+                    <h3>Ширина</h3>
+                </div>
+                <div class="block_hover">
+                    <div class="range_val">
+                        <div class="inp-group">
+                            <span class="text">от</span>
+                            <input type="text" name="dec" class="dec1">
+                            <span class="text">до</span>
+                            <input type="text" name="dec" class="dec2">
+                        </div>
+                    </div>
+                    <div class="slider-range"></div>
+                </div>
+            </li>
+            <li class="panel_heading">
+                <div class="block_title">
+                    <h3>Глубина</h3>
+                </div>
+                <div class="block_hover">
+                    <div class="range_val">
+                        <div class="inp-group">
+                            <span class="text">от</span>
+                            <input type="text" name="dec" class="dec1">
+                            <span class="text">до</span>
+                            <input type="text" name="dec" class="dec2">
+                        </div>
+                    </div>
+                    <div class="slider-range"></div>
+                </div>
+            </li>
+
+            <li class="panel_heading">
+                <div class="block_title">
+                    <h3>Цена</h3>
+                </div>
+                <div class="block_hover">
+                    <div class="range_val">
+                        <div class="inp-group">
+                            <span class="text">от</span>
+                            <input type="text" name="dec" class="dec1">
+                            <span class="text">до</span>
+                            <input type="text" name="dec" class="dec2">
+                        </div>
+                    </div>
+                    <div class="slider-range"></div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="button-group"><a href="#" class="btn-accent">Показать</a><a href="#" class="links-sale">Сбросить</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Категории</h2>
+
+        <ul class="list-category filter-list">
+            <li><a href="#">Аксессууары</a></li>
+            <li><a href="#" class="current">Биде</a></li>
+            <li><a href="#"> Ванны акриловые</a></li>
+            <li><a href="#"> Ванны стальные</a></li>
+            <li><a href="#"> Ванны чугунные</a></li>
+            <li><a href="#">Водонагреватели</a></li>
+            <li><a href="#"> Душ верхний</a></li>
+            <li><a href="#"> Душевые гарнитуры</a></li>
+            <li><a href="#"> Душевые ограждения</a></li>
+            <li><a href="#"> Душевые поддоны</a></li>
+            <li><a href="#"> Душевые трапы</a></li>
+            <li><a href="#">Инсталяции</a></li>
+            <li><a href="#"> Керамическая плитка</a></li>
+            <li><a href="#">Керамогранит</a></li>
+            <li><a href="#">Комплектующие</a></li>
+            <li><a href="#">Писсуары</a></li>
+            <li><a href="#">Полотенцесушители</a></li>
+            <li><a href="#">Раковины</a></li>
+            <li><a href="#">Унитазы</a></li>
+            <li><a href="#"> Душевые кабины</a></li>
+            <li><a href="#"> Душевые лейки</a></li>
+            <li><a href="#"> Душевые системы</a></li>
+            <li><a href="#">Мебель</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.equalheights.min.js"></script>
+<script src="js/common.js"></script>
+
+
+</body>
+</html>
